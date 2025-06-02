@@ -1,0 +1,360 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  line-height: 1.6;
+  background-color: white;
+}
+
+
+
+
+header {
+  background-color: white;
+  border-bottom: 1px solid whitesmoke;
+  
+}
+
+
+
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.inner:hover {
+  background-color: #eef6ff;
+}
+
+
+.logo img {
+  height: 40px;
+}
+
+
+.logo  {
+  font-size: 30px;
+}
+
+
+.sub-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px; 
+}
+
+.menu, .login-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+
+.menu li a, .login-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+
+
+.menu li a:hover,
+.login-menu li a:hover {
+  color: blue;
+}
+
+
+.icons {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+
+
+
+.main-menu {
+  display: flex;
+  justify-content: flex-start;  
+  gap: 20px; 
+  padding: 0;
+  margin: 0;
+  border: 1px solid gray;
+}
+
+
+
+.item {
+  position: relative;
+  list-style: none;
+}
+
+
+.select {
+ cursor: pointer;
+}
+
+
+
+.main-menu .item__contents {
+ display: none;
+  position: absolute;
+  background-color: white;
+  z-index: 100;
+  width: 300px; 
+  padding: 1px;
+}
+
+.main-menu .item:hover .item__contents {
+  display: block;
+}
+
+
+.main-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+
+/* 배너이미지 */
+.banner  {
+  
+  width:"600px" height:"200px"
+  white-space: nowrap;
+  overflow-x: auto;         
+  display: flex;           
+  gap: 10px;                
+}
+
+
+
+
+/* 배너옆 로그인 */
+
+.img1  {
+  margin-left: 80px;
+}
+
+.log-wrap  {
+   display: flex;
+   justify-content: flex-end;  
+   font-size: 20px;
+}
+
+.find {
+  font-size: 15px;
+}
+
+.lg1 {
+  background-color: skyblue;
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.lg2 {
+  
+  cursor: pointer;
+}
+
+
+
+/* 검색창부분 */
+
+
+.research1 {
+  white-space: nowrap; 
+  overflow-x: auto;
+}
+
+.search-box {
+  width: 800px;
+  height: auto;
+   border: 3px solid skyblue;
+   border-radius: 10px;
+   margin-left: 50px;
+
+
+}
+
+.search-box input {
+      width: 500px;
+      height: auto;
+      border: none;
+      outline: none;
+      font-size: 15px;
+      justify-content: center;
+      
+    }
+
+  
+.search-box button {
+     
+  background: none;
+  border: none;
+  cursor: pointer;
+
+}
+
+
+.search-box button img {
+      width: 16px;
+      height: 16px;
+    }
+
+
+
+
+
+
+
+/* 자주찾는 서비스 */
+
+.part-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+
+.service-list {
+  white-space: nowrap;      /* 넘치면 밑으로 */
+  overflow-x: auto;         /* 넘치면 가로 스크롤해주기 */
+  display: flex;            /* 가로 정렬하는법 */
+  gap: 10px;                /* 항목 간 간격 벌리기 */
+}
+
+
+.pic-item {
+ min-width: 200px;
+      max-width: 300px;
+      padding: 20px;
+      text-align: center;
+
+}
+
+
+
+/* 원스톱 서비스 */
+
+ .stop-notice {
+    white-space: nowrap;        /*   줄바꿈 방지   */
+    overflow-x: auto;           /*  1줄 가로 스크롤  */
+    display: flex;              /* 내부를 가로 정렬 */
+    flex-wrap: nowrap;          /* 줄바꿈 없애기 */
+    align-items: flex-start;    /* 세로 정렬 옵션 */
+    gap: 20px;                  /* 아이템 간 간격 */
+  }
+
+
+
+  .one-stop {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+
+
+  .one-stop, .notice {
+    display: inline-block;      /* 가로 정렬 유지 */
+    vertical-align: top;        /* 위로 정렬 */
+    cursor: pointer;            /* 마우스 모양 바꿔주기 */
+  }
+
+  .service-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;                  /* 간격 벌리기 */
+    
+  }
+
+  .service-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+  }
+
+
+
+
+
+/* 공지사항 */
+
+  .notice  {
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+
+  .notice2 {
+    
+
+  }
+
+  .plus {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+  }
+
+
+  .color1 {
+    color: blue;
+  }
+
+  .channels {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.channel {
+  text-align: center;
+  width: 150px;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #fafafa;
+  
+}
+
+
+.channel img {
+  max-width: 100%;
+  height: 50px;
+  object-fit: contain;
+}
+
+.gov24 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.gov24 img {
+  height: 30px;
+}
+
